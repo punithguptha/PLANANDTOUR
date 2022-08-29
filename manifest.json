@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "PlanAndTour",
+  "description": "Your one stop solution for guided walkthroughs",
+  "version": "1.0",
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "PlanAndTour"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["helpers/shepherd.css"],
+      "js": [
+        "helpers/theroom.js",
+        "helpers/utils.js",
+        "helpers/sweetalert2.min.js",
+        "helpers/shepherd.js",
+        "jquery.min.js",
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "permissions": ["activeTab", "storage", "tabs"]
+}

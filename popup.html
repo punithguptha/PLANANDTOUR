@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Path Finder</title>
+
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <h1 class="cta">Plan And Tour</h1>
+    <div class="cta">
+      <button class="CreateTour" title="To create a new Tour">
+        Create Tour
+      </button>
+      <button
+        class="UploadTour"
+        title="Upload a json file of existing/custom Tour"
+      >
+        UploadTour
+      </button>
+    </div>
+    <div class="AccordionList">
+      <ul class="accordion"></ul>
+    </div>
+    <div class="TourForm">
+      <input type="text" placeholder="TourName" />
+      <textarea placeholder="Desc for the Tour" id="" maxlength="50"></textarea>
+      <div class="buttonGroupForm">
+        <button class="cancelButton">Cancel</button>
+        <button class="saveButton">Save</button>
+      </div>
+    </div>
+    <input type="file" id="hiddenFileInput" style="display: none" />
+    <div class="p10"></div>
+    <div class="LoaderDiv">
+      <div class="LoaderDivText">Loading Tour</div>
+      <div class="LoaderDivAnimation" style="text-align: center"></div>
+    </div>
+  </body>
+</html>

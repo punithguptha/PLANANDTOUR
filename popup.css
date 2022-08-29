@@ -1,0 +1,330 @@
+html {
+  background-color: #f8f8f8;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  min-width: 400px;
+  min-height: 200px;
+  color: #333333;
+  line-height: 19px;
+  font-size: 13px;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+/* ul {
+  padding-left: 25px;
+} */
+
+ul.over li.draggable{
+  background-color: blue;
+}
+
+.CreateTour,
+.UploadTour {
+  border: 0;
+  background-color: transparent;
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all 200ms;
+  text-decoration: underline;
+}
+
+.CreateTour:hover {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.UploadTour:hover {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cta {
+  text-align: center;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+/* Accordion CSS start */
+/* * {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  } */
+
+.TourForm {
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.TourForm input {
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.TourForm textarea {
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+.buttonGroupForm {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.buttonGroupForm button {
+  margin-left: 10px;
+}
+
+.TourElement {
+  display: inline-flex;
+  width: 100%;
+  background-color: white;
+}
+
+.tourEdit {
+  /*display to be made flex during runtime */
+  display: none;
+  flex-flow: column;
+  padding: 10px;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.tourEdit label {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.tourEdit .tourEditButtonsContainer {
+  padding-top: 10px;
+}
+
+.tourEdit .tourEditButtonsContainer button {
+  margin-left: 10px;
+}
+
+#tourStepAnchor {
+  height: 100%;
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 0.15em;
+  transition: background 0.3s ease;
+  font-size: medium;
+}
+
+.buttonGroupOuter {
+  align-self: center;
+  right: 0;
+  position: absolute;
+  padding-right: 10px;
+  display: inline-flex;
+}
+
+.buttonGroupOuter button {
+  margin-left: 3px;
+}
+
+.buttonGroupOuter button img {
+  display: block;
+}
+
+.buttonGroupOuter a {
+  text-decoration: none;
+}
+
+.stepOrderButtonsContainer{
+  display: none;
+  justify-content: center;
+  padding:5px;
+  border-top:2px solid black;
+}
+
+.stepOrderButtonsContainer button{
+  margin-left: 15px;
+}
+
+.StepElement {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.stepEdit {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  border: 2px lightseagreen solid;
+  padding: 10px;
+  height: 100%;
+}
+
+.stepEdit label {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  font-weight: normal;
+  color: lightseagreen;
+  padding-bottom: 10px;
+}
+
+.stepEdit .stepDescriptionLabel textarea {
+  min-height: 80px;
+}
+
+.stepEdit .stepSelectorLabel textarea {
+  min-height: 50px;
+}
+
+.stepEdit .stepEditButtonsContainer button {
+  margin-left: 10px;
+}
+
+.StepText {
+  padding: 5px;
+  align-self: center;
+}
+
+.buttonGroupInner {
+  padding: 5px;
+  margin-left: auto;
+}
+
+.buttonGroupInner button {
+  font-size: smaller;
+  margin-left: 3px;
+}
+
+.buttonGroupInner button img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.toggle:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.StepElement:hover {
+  background-color: lightseagreen !important;
+  color: white !important;
+}
+
+i {
+  float: right;
+  padding-left: 3px;
+}
+.iconleft {
+  float: left;
+  padding-right: 3px;
+  padding-left: 0px;
+}
+p {
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+.description {
+  margin: 1em auto 2.25em;
+}
+/* body {
+    width: 40%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 1.5em auto;
+    color: #333;
+  } */
+h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul .inner {
+  padding: 0 10px 0 10px;
+  overflow: hidden;
+  display: none;
+}
+ul li {
+  margin: 0.5em 0;
+}
+
+/* ul li a.toggle:hover {
+    background: rgba(193, 193, 193, 0.9);
+  } */
+/* Accordion CSS end */
+
+/*loader css start*/
+.LoaderDiv {
+  display: none;
+  /* display: flex; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  /* z-index: 10000000000000; */
+  backdrop-filter: blur(100px);
+}
+
+.LoaderDivText {
+  text-align: center;
+  font-size: x-large;
+  padding-bottom: 50px;
+  font-weight: bolder;
+}
+
+.LoaderDivAnimation {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid black;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*loader css end*/

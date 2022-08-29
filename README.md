@@ -17,7 +17,10 @@ A chrome extension which serves as one stop solution for guided walkthroughs. Us
 
 <br>
 
-![](ReadMeAssets/Overview.png)
+<p align="center">
+    <img src='ReadMeAssets/Overview.png' height="500" width="500">
+</p>
+
 
 Before we start explaining on usage, one needs to understand two terms which will frequently used below, Tour and Step. A step is an individual element in the walkthrough, wheras Tour is a collection of steps. Having said that lets divide the functionality section into two parts, one of them being Tour and other being of the Step.
 
@@ -28,14 +31,17 @@ Before we start explaining on usage, one needs to understand two terms which wil
     <h4><strong>3. AddStep(s):</strong></h4> To add steps in the current Tour. When this option is clicked, an inspector styled rectangle appears on element hovered, which indicates the outline of particular element in dom, as shown below
     
     <br>
-
-    ![](ReadMeAssets/ElementSelector.png)
+    
+    <img src='ReadMeAssets/ElementSelector.png' height="100%" width="100%">
 
     Upon succesful selection of element which needs to be added as step, press <strong>"Shift+S"</strong> shortcut on the keyboard, upon which you will be greeted with below menu.
     
     <br>
-    
-   ![](ReadMeAssets/StepAdditionMenu.png)
+
+    <p align="center">
+      <img src='ReadMeAssets/StepAdditionMenu.png' height="250" width="300">
+    </p>
+
     
 
     <h4><strong>4. Present:</strong></h4>

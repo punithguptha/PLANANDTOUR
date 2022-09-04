@@ -5,7 +5,7 @@ Chrome Extension for guided walkthroughs
 A chrome extension which serves as one stop solution for guided walkthroughs. Using this a user can create walkthroughs and present them for any website. Apart from these there are several functionalities built in like download, upload, delete, etc, which will be covered in detail under **Functionality and Usage** section.
 
 ##   Technologies and Libraries Used:
-* Javascript
+* Javascript, HTML, CSS
 * Jquery
 * sweetalert.js
 * shepherd.js
